@@ -50,11 +50,11 @@ const config = {
       },
       {
         test: /\.s[ca]ss$/,
-        use: [isDevelopment ? 'style-loader' : MiniCssExtractPlugin.loader, cssLoader, 'sass-loader'],
+        use: [isDevelopment ? 'style-loader' : MiniCssExtractPlugin.loader, cssLoader, 'postcss-loader', 'sass-loader'],
       },
       {
         test: /\.less$/,
-        use: [isDevelopment ? 'style-loader' : MiniCssExtractPlugin.loader, cssLoader, 'less-loader'],
+        use: [isDevelopment ? 'style-loader' : MiniCssExtractPlugin.loader, cssLoader, 'postcss-loader', 'less-loader'],
       },
     ],
   },
