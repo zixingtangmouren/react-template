@@ -1,3 +1,6 @@
+const { resolve } = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
 /** @type {import('webpack').Configuration} */
 const config = {
   module: {
@@ -23,6 +26,12 @@ const config = {
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.json'],
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: 'react-template',
+      template: resolve(__dirname, './public/index.html'),
+    }),
+  ],
 };
 
 module.exports = config;
