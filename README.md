@@ -11,7 +11,9 @@
 - [x] 支持语法规范、代码风格检测
 - [ ] 支持 commit 信息规范检测
 - [ ] 支持 git 提交代码与检测
-- [ ] 支持 css/less/sass 编译
+- [x] 支持 css/less/sass 编译
+- [x] 支持 Css Modules
+- [ ] 支持 css-in-js
 - [ ] 支持样式兼容
 - [ ] 支持移动端 rem 适配方案
 - [ ] 支持移动端 vw 适配方案
