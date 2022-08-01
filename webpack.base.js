@@ -7,10 +7,21 @@ const config = {
         use: ['babel-loader'],
       },
       {
+        test: /\.jsx$/,
+        use: ['babel-loader'],
+      },
+      {
         test: /\.ts$/,
         use: ['babel-loader'],
       },
+      {
+        test: /\.tsx$/,
+        use: ['babel-loader'],
+      },
     ],
+  },
+  resolve: {
+    extensions: ['.ts', '.tsx', '.js', '.json'],
   },
 };
 
