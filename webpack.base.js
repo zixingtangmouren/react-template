@@ -1,5 +1,6 @@
 const { resolve } = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const EslintWebpackPlugin = require('eslint-webpack-plugin');
 
 /** @type {import('webpack').Configuration} */
 const config = {
@@ -31,6 +32,7 @@ const config = {
       title: 'react-template',
       template: resolve(__dirname, './public/index.html'),
     }),
+    new EslintWebpackPlugin(),
   ],
 };
 
