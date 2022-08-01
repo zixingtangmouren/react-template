@@ -6,6 +6,7 @@
         "useBuiltIns": "entry",
         "corejs": "3.23"
       }
-    ]
+    ],
+    "@babel/preset-typescript"
   ]
 }

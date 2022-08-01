@@ -6,6 +6,10 @@ const config = {
         test: /\.js$/,
         use: ['babel-loader'],
       },
+      {
+        test: /\.ts$/,
+        use: ['babel-loader'],
+      },
     ],
   },
 };
