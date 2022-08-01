@@ -1,8 +1,7 @@
+import styles from './index.scss';
+
 function Home() {
-  // if (true) {
-  //   throw new Error('Error');
-  // }
-  return <div>Home</div>;
+  return <div className={styles.home}>Home</div>;
 }
 
 export default Home;
